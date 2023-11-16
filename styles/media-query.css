@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/*
+iPads, Tablets – 481px — 768px.
+Small screens, laptops – 769px — 1024px.
+Desktops, large screens – 1025px — 1200px.
+Extra large screens, TV – 1201px, and more. 
+*/
+
+@media screen and (min-width: 481px) and (max-width:768px) { /*iPads, Tablets*/
+    section#login{
+        width: 90vw;
+    }
+    
+    section#login > div#imagem {
+        float: left;
+        width: 45%;
+        height: 100%;
+        background-position: center bottom;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 55%;
+        height: 100%;
+    }
+
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) { /*Small screens, laptops*/
+    section#login {
+        width: 769px;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+        background-position: center bottom;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+}
+
+@media screen and (min-width: 1025px) { /*Desktops, large screens*/
+    section#login {
+        width: 1025px;
+    }
+
+    section#login > div#imagem {
+        float: right;
+        width: 50%;
+        height: 100%;
+        background-position: center bottom;
+    }
+
+    section#login > div#formulario {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+}
