@@ -10,6 +10,7 @@ Extra large screens, TV – 1201px, and more.
 @media screen and (min-width: 481px) and (max-width:768px) { /*iPads, Tablets*/
     section#login{
         width: 90vw;
+        height: 50vh;
     }
     
     section#login > div#imagem {
@@ -33,17 +34,18 @@ Extra large screens, TV – 1201px, and more.
 @media screen and (min-width: 769px) and (max-width: 1024px) { /*Small screens, laptops*/
     section#login {
         width: 769px;
+        height: 60vh;
     }
 
     section#login > div#imagem {
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
         background-position: center bottom;
     }
 
     section#login > div#formulario {
-        float: right;
+        float: left;
         width: 50%;
         height: 100%;
     }
@@ -74,4 +76,9 @@ Extra large screens, TV – 1201px, and more.
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
+
+    section#login > div#formulario > p {
+        font-size: 1.2em;
+    }
+
 }
